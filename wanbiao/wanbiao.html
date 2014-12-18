@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>有道广告-wanbiao-250*250</title>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+
+img{
+    border:none;
+}
+ul,li{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.clear{clear:both;}
+a img{border:0px;}
+#slide-client {
+
+}
+#slide-ul {
+  width: 2000px;
+  -webkit-transition: all .5s ease-in-out 1s;
+  -o-transition: all .5s ease-in-out 1s;
+  -moz-transition: all .5s ease-in-out 1s;
+  transition: all .5s ease-in-out;
+}
+/* wanbiao-17 */
+#adwrp {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width:250px;
+  height:250px;
+  background-color: #d3d3d3;
+  font-family: "微软雅黑";
+}
+#wanbiao-logo{ 
+	display:block;
+	width: 250px;
+	height:35px;
+	background-image: url(wanbiao-17/wanbiao-logo.jpg);
+}
+#brandWrp{ 
+	width:74px;
+	float:left;
+	padding:0px 3px 5px 3px;
+}
+#brandWrp li{ 
+	margin-top:3px;
+	background-color:#ffffff;
+	border-left:5px #ffffff solid;
+	border-right:5px #ffffff solid;
+}
+#brandWrp li:hover,#brandWrp li.active{border-right:5px #b04a13 solid;}
+#brandWrp li a{ 
+	display:block;
+	width: 64px;height: 32px;
+}
+.slideWrp{width: 170px;height: 210px;padding-bottom:5px; position: relative;	float: left;
+}
+#slide-client{ 
+	width: 170px;
+	height: 170px;
+	position: relative;
+	overflow: hidden;
+}
+#slide-client ul{display: none;}
+#slide-client #slide-ul {
+  width: 2000px;
+  display: block;
+  position:absolute;
+  top:0px;
+  left: 0px;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+#slide-ul  a{ 
+ display:block;
+ width: 167px;height: 167px;
+ margin:3px 2px 0px 1px;
+}
+#slide-ul  li img{
+width: 167px;height: 167px}
+#infoWrp{ 
+	width: 167px; 
+	position: relative;
+	height: 39px;
+	margin:1px 2px 0px 1px;
+	background-color:rgb(255,255,255); /* background color for IE */
+	filter: alpha(opacity=65); /* opacity filter for IE */
+	background-color:rgba(255,255,255,0.65);
+}
+#infoleft{ 
+	width: 135px;
+	display: block;
+	float: left;
+	line-height: 12px;
+	font-size: 12px;
+	color: #585858;
+}
+#infoleft span{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+	color: #b01330;
+}
+#infoWrp #buy-now{ 
+	position: absolute;;
+	top:3px;
+	right: 8px;
+	display:block;
+	width:46px;
+	height: 19px;
+	background-image: url(wanbiao-17/buy_now.png);
+}
+#slide-client #nav-ul{
+    width:10px;
+    z-index:999;
+    display:block;
+    height: auto;
+    position:absolute;
+    top:10px;
+    right:10px;
+    overflow:hidden;
+ }
+#slide-client #slideUl{display:none;}
+#slide-client #cur-ul{display:block;}
+#nav-ul li { 
+width:24px;
+height:16px;
+list-style-type:disc;
+list-style-position:inside;
+color:#d1d1d1;
+font-size:18px;
+text-align:center;
+cursor:pointer;
+}
+	
+#nav-ul li.cur{
+	color:#b01330;
+	list-style-type:circle;
+	font-size:19px;
+}
+#slide-ul li span{display: none;}
+.displayNone{display: none;}
+</style>
+</head>
+<body>
+
+<div id="adwrp">
+	<div id="wanbiao-logo"></div>
+	<ul id="brandWrp">
+		<li id='casio'><a href=""><img src="wanbiao-17/casio.jpg"/></a></li>
+		<li id='rolex'><a href=""><img src="wanbiao-17/rolex.jpg"/></a></a></li>
+		<li id='armandNicolet'><a href=""><img src="wanbiao-17/armandNicolet.jpg"/></a></a></li>
+		<li id='longines'><a href=""><img src="wanbiao-17/longines.jpg"/></a></a></li>
+		<li id='tissot'><a href=""><img src="wanbiao-17/tissot.jpg"/></a></a></li>
+		<li id='omega'><a href=""><img src="wanbiao-17/omega.jpg"/></a></a></li>
+	</ul>
+	<div class="slideWrp">
+		<div id="slide-client">
+		    <ul id="slide-ul">
+              <!--  #foreach($index in[0..5])
+                #set($item = $items.get($index))
+                #set($desc = $!stringUtils.abbreviate($item.desc,20))
+            -->
+		    	<li proDesc=""><a href=""  proPrice="" proDesc="" proId=""><img src="wanbiao-17/img1.jpg"><span class="brandCh">卡西欧</span></a></li>
+		    	<li ><a href=""><img src="wanbiao-17/img2.jpg"><span class="brandCh">劳力士</span></a></li>
+		    	<li ><a href=""><img src="wanbiao-17/img4.jpg"><span class="brandCh">天梭</span></a></li>
+				<li ><a href=""><img src="wanbiao-17/img2.jpg"><span class="brandCh">卡西欧</span></a></li>
+				<li ><a href=""><img src="wanbiao-17/img3.jpg"><span class="brandCh">卡西欧</span></a></li>
+				<li ><a href=""><img src="wanbiao-17/img1.jpg"><span class="brandCh">卡西欧</span></a></li>
+				<li ><a href=""><img src="wanbiao-17/img2.jpg"><span class="brandCh">卡西欧</span></a></li>
+                <li ><a href=""><img src="wanbiao-17/img3.jpg"><span class="brandCh">劳力士</span></a></li>
+                <li ><a href=""><img src="wanbiao-17/img3.jpg"><span class="brandCh">天梭</span></a></li>
+                <li ><a href=""><img src="wanbiao-17/img2.jpg"><span class="brandCh">劳力士</span></a></li>
+                <li ><a href=""><img src="wanbiao-17/img2.jpg"><span class="brandCh">天梭</span></a></li>
+                <li ><a href=""><img src="wanbiao-17/img1.jpg"><span class="brandCh">劳力士</span></a></li>
+                <li ><a href=""><img src="wanbiao-17/img1.jpg"><span class="brandCh">天梭</span></a></li>
+       
+		    </ul>
+		    <ul id="nav-ul">
+		    	<li class="cur"></li>
+		    	<li class=""></li>
+		    	<li class=""></li>
+		    	<li class=""></li>
+		    	<li class=""></li>
+		    </ul>
+		</div>
+		<div id="infoWrp">
+			<a id="infoleft" href="" target="_blank">
+			<span>￥</span><span id="infoPrice">1699</span>
+			<p id="infoDesc">法国精致手表品牌赫特...</p>
+			</a>
+  			<a id="buyNow" href="" target="_blank"></a>	
+  			
+		</div>
+	</div>
+    
+    
+</div>
+
+<script>
+/**
+ * desc   : 工具集: 暴露到全局对象 YD
+ * depends: hucq@rd.netease.com
+ * author : zhumzh@rd.netease.com
+ * date   : 2014-12-08
+ */
+
+(function(){
+    function animation(pro, start, end, unit, node){
+        var total = 25, count = 0, delta = end - start, timr;
+
+        timr = setInterval(function() {
+            if (++count >= total) {
+                timr = clearInterval(timr);
+            }
+            node.style[pro] = (start + delta * count / total) + unit;
+        }, 10);
+    }
+
+    window.YD = {
+        animation : animation
+    };
+}());
+
+function Slide(config){
+    this.client = config.client;
+    this.wraper = config.wraper;
+    this.items = config.items;
+    this.slideSize = config.slideSize;
+    this.slideTime = config.slideTime;
+    this.slideAuto = config.slideAuto;
+    this.navwraper = config.navwraper;
+    this.navlist = config.navlist;
+    this.navtype = config.navType;// DOT_NAV PIC_NAV
+    this._timer = null; // 自动轮播
+    this.curItem = 0;
+    this.btn_prev = config.btn_prev;
+    this.btn_next = config.btn_next;
+    this.descwrp = config.descwrp;
+    this.discwrp =config.discwrp;
+    this.pricewrp = config.pricewrp;
+    this.buywrp = config.buywrp;
+    this.btnbuy = config.btnbuy;
+    this.infowrp = config.infowrp;
+    this.showSize = config.showSize;
+    this.brandEn = config.brandEn;
+    this.brandCh = config.brandCh;
+    this.newClass=config.newClass;//item 按照brand重新分类之后ul的class
+    //console.log(this.items);
+
+}
+
+Slide.prototype = {
+    start : function(){
+        var i,that = this;
+        this.wraper.style.marginLeft='0px';
+        this.slideBrand();
+        this.jump(this.curItem,0);
+        this.play();
+        
+        //初始化当图片获得焦点时暂停轮播事件
+        for(i=0;i<this.items.length;i++){
+            var that = this;
+            this.items[i].onmouseover = function(){
+                that.pause();
+            };
+            this.items[i].onmouseout = function(){
+                that.play();
+            }
+        }
+
+        //如果导航存在则初始化导航的hover事件
+        if(this.navwraper && this.navlist){
+            for(i=0;i<this.navlist.length;i++){
+                this.navlist[i].onmouseover = this.navOver(i);
+                this.navlist[i].onmouseout = this.navOut(i);
+            }
+        }
+
+        if(this.btn_prev){
+            this.btn_prev.onclick = function(){
+                that._timer = clearInterval(that._timer);
+                that.prev();
+            };
+            this.btn_prev.onmouseout = function(){
+                that.play();
+            };
+        }
+        if(this.btn_next){
+            this.btn_next.onclick = function(){
+                that._timer = clearInterval(that._timer);
+                that.next();
+            };
+            this.btn_next.onmouseout = function(){
+                that.play();
+            };
+        }
+
+    },
+
+    navOver : function(i){
+        var that = this;
+        return function(){
+
+            //停止轮播并跳到hover的导航
+            that._timer = clearInterval(that._timer);
+            that.jump(that.curItem,i);
+        }
+    },
+
+    navOut : function(i){
+        var that = this;
+        return function(){
+            that.play();
+        }
+    },
+
+    pause : function(){
+        this._timer = clearInterval(this._timer);
+    },
+
+    play : function(){
+        var that = this;
+        if(this.slideAuto){
+            this._timer = clearInterval(this._timer);
+            this._timer = setInterval(function(){
+                that.next();
+            },this.slideTime);
+        }
+    },
+
+    jump : function(from,to){
+
+    },
+
+    next : function(){
+        //console.log('click');
+        this.jump(this.curItem,this.curItem+this.slideSize);
+    },
+
+    prev : function(){
+        this.jump(this.curItem,this.curItem-this.slideSize);
+    }
+
+};
+
+function horizontalSlide(config){
+    Slide.call(this,config);
+}
+
+horizontalSlide.prototype = new Slide({});
+horizontalSlide.prototype.jump=function(from,to){
+    var leftOffset ,range,curOffset,dest, that=this, i;
+
+    from = parseInt(from);
+    range = this.items.length;
+    from = (from+range)%range;
+    //console.log(from,to);
+
+    to = parseInt(to);
+    to = (to+range)%range;
+
+    leftOffset = (to - from)*this.items[0].offsetWidth;
+    curOffset = - this.curItem * this.items[0].offsetWidth;
+    dest = curOffset - leftOffset;
+    if(YD.hasStylePro('transition')){
+        this.wraper.style.marginLeft = dest +'px';
+    }
+    else{
+        YD.animation( 'marginLeft', curOffset, dest, 'px', this.wraper );
+    }
+    this.curItem = to;
+
+    //如果存在导航则更新导航高亮
+    if(this.navwraper && this.navlist){
+        var navClassName = this.navlist[from].className;
+        this.navlist[from].className = navClassName.replace(/\bcur-nav\b/g,'');
+        this.navlist[to].className += ' cur-nav';
+    }
+
+    //如果存在商品信息则更新商品信息
+    if(this.infowrp){
+        function updateInfo(info){
+            var i = that.items[to].getAttribute(info);
+            var iElem = $(info);
+            if(iElem)iElem.innerHTML = i;
+        }
+        var infoHandle = {
+            infowrp : function(node){
+                if(node.tagName === 'A'){
+                    var href = $$('a',that.items[to])[0].href;
+                    node.href = href;
+                }
+            },
+            discwrp : function(node){
+                updateInfo('disc');
+            },
+            descwrp : function(node){
+                updateInfo('desc');
+            },
+            pricewrp : function(node){
+                updateInfo('price');
+            }
+        };
+        for(i=0; i<this.infowrp.length;i++){
+            var wrp = this.infowrp[i];
+            for(var prop in wrp){
+                infoHandle[prop] && infoHandle[prop](wrp[prop]);
+            }
+        }
+    }
+};
+horizontalSlide.prototype.sortByBrand=function(){
+       var delobj=this.wraper;
+       var brandEn=this.brandEn;
+       var brandCh=this.brandCh;
+       var slideulWrp=[];
+       for(var i=0;i<brandCh.length;i++){
+            slideulWrp[i]=document.createElement('ul');
+            slideulWrp[i].className=brandEn[i];
+            for(var j=0;j<this.items.length;j++){
+               // var brandName=$(this.items[j]).children('.brandCh')[0].html();
+               // console.log(brandName);
+                //if(brandName==brandCh[i]){
+                //    slideulWrp[i].append(itemList[j]);
+                //}
+            }
+       }
+        this.client.remove(delobj);
+        slideulWrp[0].id='slide-ul';
+        for(var i=0;i<brandCh.length;i++){
+            this.client.append(slideulWrp[i]);
+        }       
+};
+horizontalSlide.prototype.slideBrand=function(from,to){ 
+        this.client.children('.newClass');
+
+};
+(function(){
+    function init(slideConfig){
+        var mainSlide = new horizontalSlide(slideConfig);
+        mainSlide.sortByBrand();
+        console.log($(this.items[1]).children('.brandCh')[0].html());
+    }
+    var slideConfig = {
+        client:$('#slide-client'),
+        wraper : $('#slide-ul'),
+        items : $('#slide-ul li'),
+        navwraper : $('#nav-ul'),
+        navlist : $('#nav-ul li'),
+        navtype : 'PIC_NAV',
+        infowrp : {
+              infowrp : $('#infowrp'),
+              pricewrp: $('#infoPrice'),
+              descwrp:$('#infoDesc'),
+              buywrp:$('#buyNow')
+            },
+        slideSize : 1,
+        slideTime : 3000,
+        slideAuto : false,
+        showSize : 1,
+        brandEn:['casio','rolex','armandNicolet','longines','tissot','omega'],
+        brandCh:['卡西欧','劳力士','艾美达','浪琴','天梭','欧米茄'],
+        newClass:'slideUl',
+    };
+
+    init(slideConfig);
+}());
+
+
+</script>
+</body>
+</html>
